@@ -2,9 +2,9 @@
 #include <stdlib.h>
 #include "fila.h"
 
-#define TAM_FILA 3
+#define TAM_PILHA 3
 
-int pilha[TAM_FILA], ultimaPosicaoVazia=0;
+int pilha[TAM_PILHA], ultimaPosicaoVazia=0;
 
 void empilhar(int valor){
 
@@ -12,7 +12,7 @@ void empilhar(int valor){
     pilha[ultimaPosicaoVazia] = valor;
     ultimaPosicaoVazia++;
   }else{
-    printf("Esta pilhaa esta cheia");
+    printf("Esta pilha esta cheia");
   }
 
 }
@@ -57,7 +57,7 @@ int vazia(){
 
 int cheia(){
   
-  if(ultimaPosicaoVazia == TAM_FILA){
+  if(ultimaPosicaoVazia == TAM_PILHA){
     return 1;
   }else{
     return 0;
